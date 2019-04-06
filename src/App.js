@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import config from "./config";
 
 class App extends Component {
   render() {
+    if (config.isShow) {
+      return <div className="App">My Own React App</div>;
+    }
+
     return (
       <div className="App">
         <header className="App-header">
